@@ -1,3 +1,11 @@
+/*
+TO DO
+    add price on menu for dishes
+    construct contact page
+    switch nav and logo sides
+    improve (?) footer
+*/
+
 import showNavAndLogo from './nav.js';
 import showFooter from './footer.js';
 import showHome from './home.js';
