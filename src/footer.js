@@ -1,4 +1,4 @@
-export default function showFooter (contentBox) {
+export default function (contentBox) {
     const footer = document.createElement('div');
     const tel = document.createElement('p');
     const email = document.createElement('p');

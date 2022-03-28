@@ -1,8 +1,6 @@
 import showNavAndLogo from './nav.js';
 import showFooter from './footer.js';
 import showHome from './home.js';
-import showMenu from './menu.js';
-import showContact from './contact.js';
 import switchPage from './switch-page.js'
 import './style.css';
 
@@ -16,17 +14,14 @@ const menuBtns = document.querySelectorAll('.menu-btn');
 
 menuBtns.forEach(btn => {
     btn.addEventListener('click', e => {
-        if (e.target.innerText == 'home') {
-            console.log(e.target.innerText);
-            switchPage(showHome, 'home');
+        if (e.target.innerText == 'Home') {
+            switchPage('home', contentBox);
         }
-        else if (e.target.innerText == 'menu') {
-            switchPage('menu');
+        else if (e.target.innerText == 'Menu') {
+            switchPage('menu', contentBox);
         }
         else {
-            switchPage('contact');
+            switchPage('contact', contentBox);
         };
     });
 });
-
-/* figure out flow of modules */

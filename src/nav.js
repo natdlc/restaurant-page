@@ -1,4 +1,4 @@
-export default function showNavAndLogo(contentBox) {
+export default function (contentBox) {
     const nav = document.createElement('nav');
     const ul = document.createElement('ul');
     const home = document.createElement('li');
