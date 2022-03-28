@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+:root {
+    --gold: rgb(214, 139, 0);
+    --darkgold: rgb(109, 71, 0);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    flex-basis: 75%;
+    box-shadow: 1px 2px 6px rgb(0,0,0,0.8);
+    border-radius: 30px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+#content ul {
+    display: flex;
+    align-items: center;
+    gap: 40%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+li:hover {
+    border-bottom: 1px solid var(--gold);
+}
+
+.logo {
+    display: flex;
+    flex-flow: column;
+    color: var(--gold);
+}
+
+.logo p {
+    font-family: 'Bungee';
+    font-size: 32px;
+}
+
+.logo p:last-child {
+    font-size: 22px;
+    text-align: center;
+}
+
+.hero-container {
+    background-image: url('https://images.unsplash.com/photo-1615557960916-5f4791effe9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-wrapper {
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.8);
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    color: white;
+    font-weight: 100;
+}
+
+.hero-text-wrapper p:first-child {
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.hero-text-wrapper p:nth-child(2) {
+    font-size: 22px;
+}
+
+.hero-text-wrapper button {
+    background: none;
+    border: none;
+    background-color: var(--gold);
+    color: black;
+    padding: 10px 42px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 25px;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-text-wrapper button:hover {
+    background-color: var(--darkgold);
+    color: var(--gold);
+}
+
+.footer {
+    flex-basis: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
