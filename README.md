@@ -2,6 +2,9 @@
 
 credits: 
 
+hero photo
+https://unsplash.com/photos/YMkX5NjURhk
+
 stock photo used for dish
 https://cocofood.co/blogs/recipes/savory-grilled-chicken
 
