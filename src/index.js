@@ -20,17 +20,12 @@ const indexModule = (() => {
     
     menuBtns.forEach(btn => {
         btn.addEventListener('click', e => {
-            if (e.target.innerText == 'Home') {
-                switchPage('home', contentBox);
-            }
-            else if (e.target.innerText == 'Menu') {
-                switchPage('menu', contentBox);
-            }
-            else {
-                switchPage('contact', contentBox);
-            };
+            if (e.target.innerText == 'Home') switchPage('home', contentBox);
+            else if (e.target.innerText == 'Menu') switchPage('menu', contentBox);
+            else switchPage('contact', contentBox);
         });
     });
+
     //github repo
     const addGitHub = (() => {
         const github = document.createElement('a');

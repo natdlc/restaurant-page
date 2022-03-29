@@ -1,3 +1,5 @@
+import showMenu from './menu.js';
+import switchPage from './switch-page.js';
 export default function (contentBox) {
     const heroContainer = document.createElement('div');
     const heroTextWrapper = document.createElement('div');
@@ -8,6 +10,8 @@ export default function (contentBox) {
     heroTextUpper.innerText = 'Satisfy Your Cravings';
     heroTextLower.innerText = 'With The Best Grilled Recipes In The City';
     cta.innerText = 'Menu';
+
+    cta.addEventListener('click', () => switchPage('menu',contentBox));
 
     heroTextWrapper.classList.add('hero-text-wrapper');
     heroContainer.classList.add('hero-container');
