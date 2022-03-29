@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
+    position: relative;
 }
 
 #content {
@@ -40,7 +40,7 @@ body {
 #content ul {
     display: flex;
     align-items: center;
-    gap: 40%;
+    gap: 70px;
 }
 
 ul {
@@ -60,6 +60,7 @@ li:hover {
     display: flex;
     flex-flow: column;
     color: var(--gold);
+    cursor: pointer;
 }
 
 .logo p {
@@ -105,7 +106,7 @@ li:hover {
     font-size: 22px;
 }
 
-.hero-text-wrapper button {
+button {
     background: none;
     border: none;
     background-color: var(--gold);
@@ -119,7 +120,7 @@ li:hover {
     cursor: pointer;
 }
 
-.hero-text-wrapper button:hover {
+button:hover {
     background-color: var(--darkgold);
     color: var(--gold);
 }
@@ -166,6 +167,8 @@ li:hover {
 .menu-card > div:nth-child(2) {
     font-weight: 100;
     line-height: 30px;
+    display: flex;
+    align-items: end;
 }
 
 .menu-card:last-child {
@@ -182,9 +185,63 @@ li:hover {
     font-size: 14px;
     font-weight: 300;
     /* flex: 0.3; */
+}
 
+.menu-card:last-child div:nth-child(2) {
+    align-items: center;
 }
 
 .menu-card img {
+    width: 100%;
+}
+
+.contact-wrapper {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: 1px 1px 6px rgb(0,0,0,0.4);
+    padding: 35px;
+    width: 30%;
+    border-radius: 15px;
+}
+
+input {
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightgray;
+}
+
+form button {
+    align-self: center;
+}
+
+.footer {
+    cursor: default;
+}
+
+a {
+    position: absolute;
+    left: 35px;
+    bottom: 35px;
+    width: 35px;
+}
+
+a img {
     width: 100%;
 }

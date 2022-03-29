@@ -21,12 +21,13 @@ export default function (contentBox) {
     logoLower.innerText = 'Wheel';
 
     contentBox.appendChild(nav);
-    nav.appendChild(ul);
-    ul.appendChild(home);
-    ul.appendChild(menu);
-    ul.appendChild(contact);
 
     nav.appendChild(logo);
     logo.appendChild(logoUpper);
     logo.appendChild(logoLower);
+
+    nav.appendChild(ul);
+    ul.appendChild(home);
+    ul.appendChild(menu);
+    ul.appendChild(contact);
 };

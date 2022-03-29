@@ -18,17 +18,19 @@ export default function (contentBox) {
         const imageTitleWrapper = document.createElement('div');
         const grilledChickenImg1 = new Image();
         grilledChickenImg1.src = chickenImage1;
-        const dish1Title = document.createElement('p');
-        dish1Title.innerText = 'Savory Grilled Chicken';
+        const dishTitle = document.createElement('p');
+        dishTitle.innerText = 'Savory Grilled Chicken';
+        const dishPrice = document.createElement('p');
+        dishPrice.innerText = '$8.25';
     
         const descriptionWrapper = document.createElement('div');
         const descriptionText = document.createElement('p');
         descriptionText.innerText = 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et rerum distinctio, odit illum eum doloremque?'
     
         descriptionWrapper.appendChild(descriptionText);
-    
+        descriptionWrapper.appendChild(dishPrice);
         imageTitleWrapper.appendChild(grilledChickenImg1);
-        imageTitleWrapper.appendChild(dish1Title);
+        imageTitleWrapper.appendChild(dishTitle);
         
         cards[i].appendChild(imageTitleWrapper);
         cards[i].appendChild(descriptionWrapper);
